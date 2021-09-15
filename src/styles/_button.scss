@@ -1,0 +1,46 @@
+.button {
+  border: 1px solid transparent;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: none;
+  user-select: none;
+
+  &:disabled {
+    opacity: 0.4;
+    filter: saturate(70%);
+    pointer-events: none;
+    cursor: auto;
+  }
+
+  &-active {
+    display: block;
+  }
+
+  &-next {
+    color: $color-main;
+    margin: auto 0 auto auto;
+    &:hover {
+      border: 1px solid $color-main;
+    }
+  }
+
+  &-back {
+    color: $color-text;
+    &:hover {
+      border: 1px solid $color-border;
+    }
+  }
+
+  &-goto {
+    color: $color-main;
+    border: 1px solid $color-main;
+    margin: auto;
+    &:hover {
+      background: $color-main;
+      color: $white;
+    }
+  }
+}

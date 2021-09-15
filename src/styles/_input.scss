@@ -1,0 +1,122 @@
+.input {
+  border: none;
+  border-bottom: 1px solid $color-border;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  box-sizing: border-box;
+  outline:none;
+  &:focus {
+    border-bottom: 1px solid $color-main;
+  }
+}
+
+.input-label {
+  color: $color-text;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-bottom: 4px;
+  display: block;
+  &__error {
+    color: $color-error;
+  }
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  .input-row {
+    flex-basis: 33%;
+    width: 33%;
+    &:last-child .input {
+      border: none;
+    }
+  }
+
+  .input {
+    margin-bottom: 0;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    outline:none;
+    border-right: 1px solid $color-border;
+  }
+}
+
+.input-group-label {
+  text-align: center;
+}
+
+.input-group-radio {
+  &__label {
+    margin-bottom: 0;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    padding: 12px 4px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline:none;
+    border-right: 1px solid $color-border;
+    width: 33.33%;
+    flex-basis: 33.33%;
+    color: $color-text;
+    cursor: pointer;
+    position: relative;
+    &:last-child {
+      border: none;
+    }
+    input {
+      position: absolute;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      z-index: -1;
+      background: transparent;
+      border: 1px solid transparent;
+      outline: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  input[type="radio"]:checked {
+    background: #98e5e1;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+{
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}

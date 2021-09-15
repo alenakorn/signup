@@ -1,0 +1,27 @@
+.progress-bar {
+  position: relative;
+  right: 0;
+  height: 10px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 0 5px 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 5px 0 rgba(34, 60, 80, 0.2);
+  margin: auto auto 12px;
+  & > span {
+    display: block;
+    height: 10px;
+    background: #a0eab2;
+    background: linear-gradient(90deg, #21d9bb 0%, #7453e0 33%, #21d9bb 66%, #7453e0 100%);
+    background-size: 300% 100%;
+    animation: animBg 2s linear infinite;
+    transition: width 0.3s;
+  }
+}
+
+@keyframes animBg {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}

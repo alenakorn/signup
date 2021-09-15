@@ -1,0 +1,25 @@
+@import "variables";
+@import "reset";
+
+@import "card";
+@import "button";
+@import "input";
+@import "select";
+@import "thankStep";
+@import "progressBar";
+
+body {
+  font-size: 14px;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0074d9;
+  background-image: linear-gradient(160deg, #0074d9 0%, #80D0C7 50%, #ffffff 100%);
+}

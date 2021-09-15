@@ -1,0 +1,31 @@
+.card {
+  box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 8px;
+  width: 340px;
+  height: 460px;
+  transform: translate3d(0, 0, 0);
+  background: $white;
+
+  &-title {
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    color: $color-main;
+    text-align: center;
+    padding: 20px;
+  }
+
+  &-content {
+    padding: 12px 20px;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 32px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
