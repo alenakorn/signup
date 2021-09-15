@@ -22,7 +22,7 @@ const Card = ({ children, cardTitle }) => {
       email,
       gender,
       password,
-      date_of_birth: `${day}/${month}/${year}`,
+      date_of_birth: new Date(`${month}/${day}/${year}`).getTime(),
       how_hear_about_us: howHearAboutUs,
     }
     const data = {user_data}

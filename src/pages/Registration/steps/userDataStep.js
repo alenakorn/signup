@@ -25,9 +25,9 @@ const UserDataStep = () => (
     />
     <Field name="howHearAboutUs" component={SelectContainer} label="Where did you heard about us?">
       <option/>
-      <option value="Nohow">Nohow</option>
-      <option value="Anyway">Anyway</option>
-      <option value="By no means">By no means</option>
+      <option value="Internet">Internet</option>
+      <option value="From friends">From friends</option>
+      <option value="TV advertising">TV advertising</option>
     </Field>
   </>
 );
